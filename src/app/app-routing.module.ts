@@ -5,9 +5,12 @@ import { SignupComponent } from './credential/signup/signup.component';
 import { HomeComponent } from './home/home.component';
 // import {BookingComponent} from './booking/booking.component';
 import { NoPageComponent } from './no-page/no-page.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { AboutComponent } from './about/about.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  // { path:'booking',component:BookingComponent},
+  { path:'gallery',component:GalleryComponent},
+  { path:'about',component:AboutComponent},
   { path:'credential',children:[{path:'signup',component:SignupComponent},{path:'login',component:LoginComponent}]},
   {path:'**',component:NoPageComponent}
 ];

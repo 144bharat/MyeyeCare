@@ -4,10 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule , ReactiveFormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 // import { BookingComponent } from './booking/booking.component';
 import { NoPageComponent } from './no-page/no-page.component';
+import { SliderComponent } from './slider/slider.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { AboutComponent } from './about/about.component';
 // import { CredentialModule } from './credential/credential.module';
 
 @NgModule({
@@ -16,11 +19,15 @@ import { NoPageComponent } from './no-page/no-page.component';
     HeaderComponent,
     HomeComponent,
     // BookingComponent,
-    NoPageComponent
+    NoPageComponent,
+    SliderComponent,
+    GalleryComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     // CredentialModule
   ],
